@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kartu Profil Digital</title>
+    <!-- Memuat Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Menggunakan font Inter sebagai default */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <!-- Container Kartu Profil -->
+    <div
+      class="w-full max-w-sm bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all hover:scale-105 duration-300"
+    >
+      <!-- Bagian Header dengan Latar Belakang Biru -->
+      <div class="h-32 bg-blue-500"></div>
+
+      <!-- Konten Utama -->
+      <div class="relative px-6 pb-8">
+        <!-- Foto Profil -->
+        <div class="flex justify-center">
+          <img
+            class="w-32 h-32 rounded-full border-4 border-white -mt-16 shadow-lg object-cover"
+            src="c:\Users\Asus\Downloads\Me.jpg"
+            onerror="this.onerror=null;this.src='https://placehold.co/200x200/E2E8F0/4A5568?text=Gagal+Muat';"
+            alt="Foto Profil Pengguna"
+          />
+        </div>
+
+        <!-- Informasi Teks -->
+        <div class="text-center pt-4">
+          <!-- Nama Pengguna -->
+          <h1 class="text-2xl font-bold text-gray-800">M.Hakam Ulumuddin.</h1>
+
+          <!-- Jabatan/Peran -->
+          <p class="text-md font-medium text-gray-500 mt-1">Web Developer</p>
+
+          <!-- Deskripsi Singkat -->
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Saya adalah seorang developer yang bersemangat dalam menciptakan
+            aplikasi web yang fungsional, menarik, dan mudah digunakan untuk
+            semua orang.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
